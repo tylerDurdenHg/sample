@@ -12,7 +12,7 @@ before_install:
 - mvn clean
 
 script:
-- mvn  package
+- ./mvnw clean install -B
 
 deploy:
   provider: elasticbeanstalk
