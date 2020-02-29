@@ -8,11 +8,8 @@ services:
 #Linking Travis CI and Docker
 - docker
 
-before_install:
-- mvn clean
-
 script:
-- ./mvnw clean install -B
+- mvn clean install
 
 deploy:
   provider: elasticbeanstalk
