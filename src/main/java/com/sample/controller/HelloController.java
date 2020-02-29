@@ -13,5 +13,6 @@ public class HelloController {
 	@GetMapping
 	public String hello() {
 		return UUID.randomUUID() + " tyler";
+		return null; // to check is travis is working?
 	}
 }
